@@ -43,6 +43,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		System.out.println("Changed on git");
 	}
 	public static void dismiss() {
 		driver.close();
